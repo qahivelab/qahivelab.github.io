@@ -7,9 +7,9 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/qahivelab-logo.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/qahivelab-logo.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/qahivelab-logo.png' | relative_url }}">
   <link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | relative_url }}">
   <link rel="mask-icon" href="{{ '/assets/favicon/safari-pinned-tab.svg' | relative_url }}" color="#66B2B2">
   <meta name="msapplication-TileColor" content="#66B2B2">
@@ -23,7 +23,7 @@
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta property="og:image" content="{{ '/assets/images/qahivelab-logo.svg' | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/qahivelab-logo.png' | absolute_url }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
   <meta name="twitter:card" content="summary_large_image">
 

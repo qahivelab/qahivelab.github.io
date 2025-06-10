@@ -9,8 +9,16 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-# Use the github-pages gem, which includes Jekyll and plugins approved for GitHub Pages
-gem "github-pages", group: :jekyll_plugins
+# Use Jekyll 4.3 for better performance and features
+gem "jekyll", "~> 4.3.3"
+
+# Jekyll plugins
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+  gem "jekyll-paginate"
+end
 
 # Testing dependencies
 gem "html-proofer", "~> 3.19.0"

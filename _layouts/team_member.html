@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="team-member">
+  <header class="team-member-header">
+    <h1>{{ page.name }}</h1>
+    {% if page.position %}
+    <h2>{{ page.position }}</h2>
+    {% endif %}
+  </header>
+
+  <div class="team-member-content">
+    {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.name }}" class="team-member-image">
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.social %}
+    <div class="team-member-social">
+      {% if page.social.github %}
+      <a href="{{ page.social.github }}" target="_blank" rel="noopener noreferrer">
+        {% include icon-github.html username=page.social.github %}
+      </a>
+      {% endif %}
+
+      {% if page.social.twitter %}
+      <a href="{{ page.social.twitter }}" target="_blank" rel="noopener noreferrer">
+        {% include icon-twitter.html username=page.social.twitter %}
+      </a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</article> 

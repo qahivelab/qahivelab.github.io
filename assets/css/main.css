@@ -139,7 +139,8 @@ a:hover {
 }
 
 .site-logo {
-  font-size: 2rem;
+  height: 40px;  /* Fixed height */
+  width: auto;   /* Maintain aspect ratio */
   margin-right: 0.5rem;
   animation: pulse 2s infinite;
 }
@@ -656,6 +657,10 @@ pre code {
 
   .site-title {
     font-size: 1.25rem;
+  }
+
+  .site-logo {
+    height: 32px;  /* Smaller height on mobile */
   }
 }
 

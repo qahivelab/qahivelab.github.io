@@ -2,21 +2,21 @@
 
 /* Technology-focused color scheme */
 :root {
-  --primary-color: #2563eb;      /* Tech blue */
-  --secondary-color: #1e40af;    /* Darker blue */
-  --accent-color: #23c3e6;       /* Bright amber/gold for better contrast */
-  --success-color: #10b981;      /* Green */
-  --warning-color: #f59e0b;      /* Amber */
-  --danger-color: #ef4444;       /* Red */
-  --dark-bg: #0f172a;           /* Dark navy */
-  --light-bg: #f8fafc;         /* Light gray */
-  --text-primary: #1e293b;      /* Dark slate */
-  --text-secondary: #64748b;    /* Slate */
-  --text-light: #94a3b8;       /* Light slate */
-  --border-color: #e2e8f0;     /* Light border */
-  --code-bg: #1e293b;          /* Code background */
+  --primary-color: #66B2B2;      /* Main teal from logo */
+  --secondary-color: #2F4F4F;    /* Darker teal */
+  --accent-color: #8CCACA;       /* Lighter teal */
+  --success-color: #4CAF50;      /* Green */
+  --warning-color: #FF9800;      /* Orange */
+  --danger-color: #F44336;       /* Red */
+  --dark-bg: #1C2F2F;           /* Very dark teal */
+  --light-bg: #F5F9F9;          /* Light teal tint */
+  --text-primary: #2F4F4F;      /* Dark teal for text */
+  --text-secondary: #557373;    /* Medium teal for secondary text */
+  --text-light: #88A9A9;       /* Light teal for subtle text */
+  --border-color: #E0EBEB;     /* Light teal border */
+  --code-bg: #2F4F4F;          /* Code background */
   --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-  --tech-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --tech-gradient: linear-gradient(135deg, #66B2B2 0%, #2F4F4F 100%);
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', Monaco, 'Inconsolata', 'Roboto Mono', monospace;
   
   /* Spacing system */
@@ -31,15 +31,15 @@
   /* Additional design tokens */
   --text-color: var(--text-primary);
   --surface-color: #ffffff;
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 1px 2px 0 rgba(47, 79, 79, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(47, 79, 79, 0.1), 0 2px 4px -1px rgba(47, 79, 79, 0.06);
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   
   /* High contrast colors */
-  --contrast-amber: #fbbf24;
-  --contrast-amber-shadow: rgba(251, 191, 36, 0.4);
+  --contrast-teal: #66B2B2;
+  --contrast-teal-shadow: rgba(102, 178, 178, 0.4);
 }
 
 /* Import Google Fonts */
@@ -133,9 +133,9 @@ a:hover {
 }
 
 .lab-accent {
-  color: #fbbf24;  /* Bright amber/gold for high contrast */
+  color: var(--accent-color);
   font-weight: 700;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(47, 79, 79, 0.3);
 }
 
 .site-logo {
@@ -199,22 +199,18 @@ a:hover {
 }
 
 .page-link:hover {
+  background: var(--light-bg);
   color: var(--primary-color);
-  background: rgba(37, 99, 235, 0.1);
 }
 
 .page-link.current {
-  color: white;
   background: var(--primary-color);
-  font-weight: 600;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  color: white;
 }
 
 .page-link.current:hover {
   color: white;
-  background: var(--primary-color);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
 }
 
 /* Hero Section */
@@ -310,36 +306,29 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--contrast-amber);
-  color: #1f2937;  /* Dark gray for high contrast */
-  font-weight: 600;
-  border: 2px solid var(--contrast-amber);
+  background: var(--primary-color);
+  color: white;
+  border: none;
 }
 
 .btn-primary:hover {
-  background: #f59e0b;  /* Darker amber on hover */
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px var(--contrast-amber-shadow);
+  background: var(--secondary-color);
 }
 
 .btn-secondary {
-  background: transparent;
+  background: var(--secondary-color);
   color: white;
-  border: 2px solid white;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  border: none;
 }
 
 .btn-secondary:hover {
-  background: white;
-  color: var(--primary-color);
-  text-shadow: none;
+  background: var(--primary-color);
 }
 
 .btn-outline {
-  background: transparent;
-  color: var(--primary-color);
   border: 2px solid var(--primary-color);
-  font-weight: 600;
+  color: var(--primary-color);
+  background: transparent;
 }
 
 .btn-outline:hover {
@@ -358,8 +347,8 @@ a:hover {
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px var(--contrast-teal-shadow);
 }
 
 .card-grid {
@@ -522,7 +511,7 @@ pre code {
 }
 
 .footer-section a {
-  color: var(--text-light);
+  color: var(--accent-color);
   text-decoration: none;
 }
 

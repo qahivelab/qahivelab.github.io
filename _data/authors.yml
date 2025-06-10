@@ -1,0 +1,101 @@
+# QA HiveLab Founders & Team - All QA Automation experts specializing in API and UI testing with Playwright and Behave
+
+juan_pablo_moreno:
+  name: "Juan Pablo Moreno"
+  bio: "QA Automation founder and AI enthusiast with expertise in prompting techniques and intelligent testing solutions. Passionate about exploring the intersection of AI and quality assurance."
+  avatar: "/assets/images/team/juan-pablo-moreno.svg"
+  social:
+    github: "jpmoreno"
+    linkedin: "juan-pablo-moreno-qa"
+  role: "QA Automation Founder"
+  company: "Healthnexus"
+  specialties: ["AI Testing", "Prompt Engineering", "Playwright", "Behave"]
+
+carolina_cardona:
+  name: "Carolina Cardona"
+  bio: "Detail-oriented QA Automation expert and fast-learning enthusiast. Specializes in reporting tools for testing results and ensuring comprehensive test coverage with meticulous attention to detail."
+  avatar: "/assets/images/team/carolina-cardona.svg"
+  social:
+    github: "carolinacardona"
+    linkedin: "carolina-cardona-qa"
+  role: "QA Automation Expert"
+  company: "Healthnexus"
+  specialties: ["Test Reporting", "Detail Analysis", "Playwright", "Behave", "API Testing"]
+
+laura_giraldo:
+  name: "Laura Giraldo"
+  bio: "Business understanding expert with a passion for AI-driven development. Bridges the gap between business requirements and technical testing solutions with innovative approaches."
+  avatar: "/assets/images/team/laura-giraldo.jpg"
+  social:
+    github: "lauragiraldo"
+    linkedin: "laura-giraldo-qa"
+  role: "QA Automation Expert"
+  company: "Healthnexus"
+  specialties: ["Business Analysis", "AI Development", "Playwright", "Behave", "Requirements Testing"]
+
+juan_luis_becquet:
+  name: "Juan Luis Becquet"
+  bio: "Problem-solving expert in QA Automation with a knack for identifying complex testing challenges and developing innovative solutions. Specializes in troubleshooting and optimization."
+  avatar: "/assets/images/team/juan-luis-becquet.jpg"
+  social:
+    github: "juanluisbecquet"
+    linkedin: "juan-luis-becquet-qa"
+  role: "QA Automation Expert"
+  company: "Healthnexus"
+  specialties: ["Problem Solving", "Test Optimization", "Playwright", "Behave", "Debugging"]
+
+juan_esteban_marin:
+  name: "Juan Esteban Marin"
+  bio: "API testing expert with deep knowledge of service-level testing strategies. Specializes in API automation, contract testing, and service integration validation."
+  avatar: "/assets/images/team/juan-esteban-marin.jpg"
+  social:
+    github: "juanestebanmar"
+    linkedin: "juan-esteban-marin-qa"
+  role: "API Testing Expert"
+  company: "Healthnexus"
+  specialties: ["API Testing", "Service Testing", "Contract Testing", "Playwright", "Behave"]
+
+juan_diego_vasquez:
+  name: "Juan Diego Vasquez"
+  bio: "Karate expert and Java testing techniques specialist. Brings extensive knowledge in API testing frameworks and Java-based automation solutions to the QA community."
+  avatar: "/assets/images/team/juan-diego-vasquez.jpg"
+  social:
+    github: "juandiegovasquez"
+    linkedin: "juan-diego-vasquez-qa"
+  role: "Java & Karate Expert"
+  company: "Healthnexus"
+  specialties: ["Karate Framework", "Java Testing", "API Automation", "Playwright", "Behave"]
+
+diego_bermudez:
+  name: "Diego Alejandro Bermudez"
+  bio: "Mentoring and CI/CD security expert with deep AI knowledge. Focuses on building secure, automated testing pipelines and mentoring the next generation of QA professionals."
+  avatar: "/assets/images/team/diego-bermudez.svg"
+  social:
+    github: "diegobermudez"
+    linkedin: "diego-bermudez-qa"
+  role: "CI/CD & AI Expert"
+  company: "Healthnexus"
+  specialties: ["CI/CD", "Security Testing", "AI Integration", "Mentoring", "Playwright", "Behave"]
+
+cesar_tapasco:
+  name: "Cesar Augusto Tapasco"
+  bio: "QA Leader and mentoring expert with comprehensive QA Automation expertise. Leads teams and drives quality initiatives while sharing knowledge and best practices across the community."
+  avatar: "/assets/images/team/cesar-tapasco.svg"
+  social:
+    github: "cesartapasco"
+    linkedin: "cesar-tapasco-qa"
+  role: "QA Leader & Mentor"
+  company: "Healthnexus"
+  specialties: ["QA Leadership", "Team Mentoring", "Automation Strategy", "Playwright", "Behave", "API Testing"]
+
+# Community Authors Template (copy this for new authors)
+# author_id:
+#   name: "Full Name"
+#   bio: "Short bio describing expertise and background"
+#   avatar: "/assets/images/team/author-name.jpg"
+#   social:
+#     github: "username"
+#     linkedin: "linkedin-handle"
+#     twitter: "twitter-handle"
+#   role: "Job Title"
+#   company: "Company Name" 

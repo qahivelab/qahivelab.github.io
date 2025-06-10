@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Enhanced rocket flame/trail with gradient -->
+  <defs>
+    <radialGradient id="flameGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff6b35;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:0.6" />
+    </radialGradient>
+    <linearGradient id="beeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="wingGradient" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#e6f3ff;stop-opacity:0.6" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Wings positioned behind the bee body - made bigger for better visibility -->
+  <ellipse cx="50" cy="38" rx="14" ry="7" fill="url(#wingGradient)" opacity="0.95" stroke="#b3d9ff" stroke-width="0.8" transform="rotate(-20 50 38)"/>
+  <ellipse cx="60" cy="38" rx="14" ry="7" fill="url(#wingGradient)" opacity="0.95" stroke="#b3d9ff" stroke-width="0.8" transform="rotate(20 60 38)"/>
+  <ellipse cx="48" cy="36" rx="9" ry="4.5" fill="#ffffff" opacity="0.85" stroke="#cce7ff" stroke-width="0.6" transform="rotate(-25 48 36)"/>
+  <ellipse cx="62" cy="36" rx="9" ry="4.5" fill="#ffffff" opacity="0.85" stroke="#cce7ff" stroke-width="0.6" transform="rotate(25 62 36)"/>
+  
+  <!-- Wing details -->
+  <path d="M44 32 Q52 28 60 38" stroke="#b3d9ff" stroke-width="0.8" fill="none" opacity="0.9"/>
+  <path d="M66 32 Q58 28 50 38" stroke="#b3d9ff" stroke-width="0.8" fill="none" opacity="0.9"/>
+  
+  <!-- Additional wing veins for more visibility -->
+  <path d="M46 36 Q56 32 64 40" stroke="#cce7ff" stroke-width="0.6" fill="none" opacity="0.7"/>
+  <path d="M48 42 Q55 38 62 42" stroke="#cce7ff" stroke-width="0.6" fill="none" opacity="0.7"/>
+  
+  <!-- Main bee body with gradient (now in front of wings) -->
+  <ellipse cx="55" cy="50" rx="18" ry="12" fill="url(#beeGradient)" stroke="#e6c200" stroke-width="0.5"/>
+  
+  <!-- Enhanced bee stripes with rounded ends -->
+  <rect x="42" y="44" width="26" height="2.5" fill="#2c2c2c" rx="1.25"/>
+  <rect x="42" y="50" width="26" height="2.5" fill="#2c2c2c" rx="1.25"/>
+  <rect x="42" y="56" width="26" height="2.5" fill="#2c2c2c" rx="1.25"/>
+  
+  <!-- Bee head moved up and forward for better bee-like appearance -->
+  <circle cx="55" cy="32" r="9" fill="url(#beeGradient)" stroke="#e6c200" stroke-width="0.5"/>
+  
+  <!-- Enhanced eyes positioned on the raised head -->
+  <ellipse cx="59" cy="30" rx="2.2" ry="2.8" fill="#1a1a1a"/>
+  <ellipse cx="52" cy="30" rx="2.2" ry="2.8" fill="#1a1a1a"/>
+  <!-- Eye highlights updated to match new head position -->
+  <circle cx="59.7" cy="29.2" r="0.7" fill="#ffffff" opacity="0.9"/>
+  <circle cx="52.7" cy="29.2" r="0.7" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Enhanced antennae positioned on the new head position -->
+  <line x1="53" y1="23" x2="55" y2="18" stroke="#2c2c2c" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="57" y1="23" x2="59" y2="18" stroke="#2c2c2c" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="55" cy="18" r="1.3" fill="#2c2c2c"/>
+  <circle cx="59" cy="18" r="1.3" fill="#2c2c2c"/>
+  
+  <!-- Small smile positioned on the new head -->
+  <path d="M53 34 Q55.5 36 58 34" stroke="#2c2c2c" stroke-width="1" fill="none" stroke-linecap="round"/>
+  
+  <!-- Motion lines for speed effect -->
+  <line x1="45" y1="47" x2="60" y2="47" stroke="#ff8c42" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+  <line x1="45" y1="52" x2="60" y2="52" stroke="#ff6b35" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+  <line x1="45" y1="57" x2="60" y2="57" stroke="#ff4757" stroke-width="1" opacity="0.6" stroke-linecap="round"/>
+</svg> 

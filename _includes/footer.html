@@ -1,0 +1,65 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ '/' | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-heading">{{ site.title | escape }}</h3>
+        <p class="footer-description">{{ site.description | escape }}</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          {%- for item in site.navigation -%}
+            <li>
+              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Connect With Us</h4>
+        <div class="social-links">
+          {%- if site.social.github -%}
+            <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">
+              <span class="icon icon--github">{% include icon-github.html %}</span>
+              <span class="username">GitHub</span>
+            </a>
+          {%- endif -%}
+          {%- if site.social.twitter -%}
+            <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="noopener">
+              <span class="icon icon--twitter">{% include icon-twitter.html %}</span>
+              <span class="username">Twitter</span>
+            </a>
+          {%- endif -%}
+          {%- if site.social.linkedin -%}
+            <a href="https://linkedin.com/{{ site.social.linkedin }}" target="_blank" rel="noopener">
+              <span class="username">LinkedIn</span>
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Powered By</h4>
+        <div class="powered-by">
+          <a href="https://sourcemeridian.com/" target="_blank" rel="noopener" class="source-meridian-link">
+            <span class="sm-logo">⚡</span>
+            <span class="sm-text">Source Meridian</span>
+          </a>
+          <p class="sm-description">Specialists in Life Science, Big Data & ML Solutions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title | escape }}. Built with Jekyll.</p>
+      <p class="footer-credits">
+        Powered by <a href="https://sourcemeridian.com/" target="_blank" rel="noopener" class="footer-sm-link">Source Meridian</a> 
+        - Your SaaS Development Partner
+      </p>
+    </div>
+  </div>
+</footer> 

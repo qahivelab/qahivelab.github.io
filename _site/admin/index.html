@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QA HiveLab Content Management</title>
+  
+  <!-- Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  
+  <!-- Custom styling to match QA HiveLab theme -->
+  <style>
+    /* Custom CMS styling */
+    .css-1iw7j4a-AppHeaderToolbarContainer {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    }
+    
+    .css-1j4k8cv-AppHeaderToolbar {
+      color: white !important;
+    }
+    
+    .css-1d7rvdv-AppHeaderToolbar h1 {
+      color: white !important;
+      font-weight: 600;
+    }
+    
+    .css-1f8w4y-AppHeaderToolbar h1:before {
+      content: "🐝 ";
+    }
+  </style>
+</head>
+<body>
+  <!-- The CMS will be injected here -->
+  <script>
+    // Custom configuration
+    CMS.init({
+      config: {
+        load_config_file: false,
+        
+        // Identity settings for GitHub authentication
+        backend: {
+          name: 'github',
+          repo: 'qahivelab/qahivelab.github.io', // Replace with your repo
+          branch: 'main'
+        },
+        
+        // Media settings
+        media_folder: 'assets/images/uploads',
+        public_folder: '/assets/images/uploads',
+        
+        // Custom settings
+        display_url: 'https://qahivelab.github.io',
+        logo_url: '/assets/images/rocket-bee-logo.svg',
+        site_url: 'https://qahivelab.github.io',
+        
+        // Load configuration from config.yml
+        load_config_file: true
+      }
+    });
+    
+    // Custom preview styles
+    CMS.registerPreviewStyle('/assets/css/main.css');
+    
+    // Custom editor components can be added here
+    console.log('QA HiveLab CMS initialized 🐝');
+  </script>
+</body>
+</html> 

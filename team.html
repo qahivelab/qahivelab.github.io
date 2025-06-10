@@ -1,0 +1,268 @@
+---
+layout: default
+title: Our Team
+permalink: /team/
+---
+
+<div class="team-header">
+  <h1 class="page-heading">Meet Our Founding Team</h1>
+  <p>Eight passionate QA Automation experts from Healthnexus, specializing in API testing, UI automation with Playwright and Behave, and cutting-edge testing technologies.</p>
+</div>
+
+<div class="team-grid">
+  {%- for member in site.team -%}
+    <div class="team-card">
+      <div class="team-member-avatar">
+        {%- if member.avatar -%}
+          <img src="{{ member.avatar | relative_url }}" alt="{{ member.name }}" class="avatar-image">
+        {%- else -%}
+          <div class="avatar-placeholder">{{ member.name | slice: 0 }}</div>
+        {%- endif -%}
+      </div>
+      
+      <div class="team-member-info">
+        <h3 class="member-name">{{ member.name }}</h3>
+        <p class="member-role">{{ member.role }}</p>
+        <p class="member-bio">{{ member.excerpt | strip_html | truncatewords: 30 }}</p>
+        
+        {%- if member.specialties -%}
+          <div class="member-specialties">
+            <h4>Specialties:</h4>
+            <div class="specialty-tags">
+              {%- for specialty in member.specialties -%}
+                <span class="specialty-tag">{{ specialty }}</span>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+        
+        <div class="member-social">
+          {%- if member.github -%}
+            <a href="https://github.com/{{ member.github }}" target="_blank" rel="noopener" class="social-link">
+              <span class="icon icon--github">{% include icon-github.html %}</span>
+              GitHub
+            </a>
+          {%- endif -%}
+          {%- if member.linkedin -%}
+            <a href="https://linkedin.com/in/{{ member.linkedin }}" target="_blank" rel="noopener" class="social-link">
+              LinkedIn
+            </a>
+          {%- endif -%}
+          {%- if member.twitter -%}
+            <a href="https://twitter.com/{{ member.twitter }}" target="_blank" rel="noopener" class="social-link">
+              <span class="icon icon--twitter">{% include icon-twitter.html %}</span>
+              Twitter
+            </a>
+          {%- endif -%}
+          {%- if member.website -%}
+            <a href="{{ member.website }}" target="_blank" rel="noopener" class="social-link">
+              Website
+            </a>
+          {%- endif -%}
+        </div>
+        
+        <div class="member-actions">
+          <a href="{{ member.url | relative_url }}" class="btn btn-outline">View Profile</a>
+        </div>
+      </div>
+    </div>
+  {%- endfor -%}
+</div>
+
+<div class="join-team-section">
+  <h2>Want to Join Our Team?</h2>
+  <p>We're always looking for passionate QA professionals to join our community and contribute to our mission.</p>
+  <div class="join-team-actions">
+    <a href="/join/" class="btn btn-primary">Join Our Community</a>
+    <a href="mailto:founders@qahivelab.com" class="btn btn-outline">Contact Founders</a>
+  </div>
+</div>
+
+<style>
+.team-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.team-header .page-heading {
+  margin-bottom: var(--spacing-sm);
+}
+
+.team-header p {
+  font-size: var(--font-size-lg);
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--text-light);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.team-card {
+  background-color: var(--surface-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.team-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.team-member-avatar {
+  margin-bottom: var(--spacing-lg);
+}
+
+.avatar-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.member-name {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-color);
+}
+
+.member-role {
+  font-size: var(--font-size-lg);
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.member-bio {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.member-specialties {
+  margin-bottom: var(--spacing-lg);
+  text-align: left;
+}
+
+.member-specialties h4 {
+  font-size: var(--font-size-sm);
+  color: var(--text-color);
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.specialty-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.specialty-tag {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+
+.member-social {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  text-decoration: none;
+}
+
+.social-link .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.social-link .icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.join-team-section {
+  background-color: var(--surface-color);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  margin-top: var(--spacing-2xl);
+}
+
+.join-team-section h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-color);
+}
+
+.join-team-section p {
+  font-size: var(--font-size-lg);
+  color: var(--text-light);
+  margin-bottom: var(--spacing-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-team-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .join-team-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style> 

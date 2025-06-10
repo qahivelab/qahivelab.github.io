@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.modified_date -%}
+        ~
+        <time class="dt-modified" datetime="{{ page.modified_date | date_to_xmlschema }}" itemprop="dateModified">
+          {{ page.modified_date | date: date_format }}
+        </time>
+      {%- endif -%}
+      {%- if page.author -%}
+        {%- assign author_data = site.data.authors[page.author] -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">
+              {%- if author_data -%}{{ author_data.name }}{%- else -%}{{ page.author }}{%- endif -%}
+            </span>
+          </span>
+      {%- endif -%}
+      <br>
+      <span class="reading-time">{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+    </p>
+    {%- if page.tags -%}
+      <div class="post-tags">
+        {%- for tag in page.tags -%}
+          <span class="tag">{{ tag }}</span>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if page.author and site.data.authors[page.author] -%}
+    {%- assign author = site.data.authors[page.author] -%}
+    <div class="author-bio">
+      <div class="author-info">
+        {%- if author.avatar -%}
+          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="author-avatar">
+        {%- endif -%}
+        <div class="author-details">
+          <h4>About {{ author.name }}</h4>
+          <p class="author-role">{{ author.role }}{%- if author.company -%} at {{ author.company }}{%- endif -%}</p>
+          <p>{{ author.bio }}</p>
+          {%- if author.social -%}
+            <div class="author-social">
+              {%- if author.social.github -%}
+                <a href="https://github.com/{{ author.social.github }}" target="_blank">GitHub</a>
+              {%- endif -%}
+              {%- if author.social.linkedin -%}
+                <a href="https://linkedin.com/in/{{ author.social.linkedin }}" target="_blank">LinkedIn</a>
+              {%- endif -%}
+              {%- if author.social.twitter -%}
+                <a href="https://twitter.com/{{ author.social.twitter }}" target="_blank">Twitter</a>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+
+  <footer class="post-footer">
+    <div class="post-navigation">
+      {%- if page.previous.url -%}
+        <div class="nav-previous">
+          <span>← Previous Post</span>
+          <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+        </div>
+      {%- endif -%}
+      {%- if page.next.url -%}
+        <div class="nav-next">
+          <span>Next Post →</span>
+          <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+        </div>
+      {%- endif -%}
+    </div>
+    
+    <div class="post-share">
+      <p>Share this post:</p>
+      <div class="share-buttons">
+        <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}" 
+           target="_blank" class="share-btn twitter">Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" 
+           target="_blank" class="share-btn linkedin">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article> 

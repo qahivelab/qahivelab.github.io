@@ -1,0 +1,49 @@
+# Site Configuration - Easy to edit without touching code
+meta:
+  title: "QA HiveLab"
+  description: "A passionate QA Automation community exploring the intersection of automation and artificial intelligence"
+  url: "https://qahivelab.github.io"
+  author: "QA HiveLab Community"
+  email: "contact@qahivelab.com"
+
+# Homepage Hero Section
+hero:
+  title: "QA Hive<span class=\"lab-accent\">Lab</span>"
+  emoji: "🐝"
+  subtitle: "Where quality assurance meets cutting-edge technology. Join our community of passionate QA engineers exploring the future of automated testing and AI-driven quality solutions."
+  primary_cta:
+    text: "Explore Blog"
+    url: "/"
+  secondary_cta:
+    text: "Join Community"
+    url: "/join/"
+
+# Feature Cards
+features:
+  - icon: "🤖"
+    title: "AI-Powered Testing"
+    description: "Explore cutting-edge artificial intelligence applications in quality assurance and test automation."
+  
+  - icon: "⚡"
+    title: "Modern Automation"
+    description: "Learn the latest tools and frameworks for efficient, reliable, and scalable test automation."
+  
+  - icon: "🚀"
+    title: "Community Driven"
+    description: "Connect with fellow QA engineers, share knowledge, and grow together in our vibrant community."
+
+# Blog Settings
+blog:
+  posts_per_page: 5
+  show_excerpts: true
+  show_tags: true
+  show_author: true
+
+# Source Meridian Partnership
+partnership:
+  company: "Source Meridian"
+  url: "https://sourcemeridian.com/"
+  tagline: "Your SaaS Development Partner"
+  description: "Specialists in Life Science, Big Data & ML Solutions"
+  show_on_homepage: true
+  show_in_footer: true 

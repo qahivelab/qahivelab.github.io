@@ -1,0 +1,26 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Avatar Circle -->
+  <circle cx="200" cy="160" r="80" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+  
+  <!-- Simple Avatar Icon -->
+  <circle cx="200" cy="140" r="30" fill="rgba(255,255,255,0.8)"/>
+  <path d="M 140 220 Q 200 180 260 220 L 260 240 Q 200 200 140 240 Z" fill="rgba(255,255,255,0.8)"/>
+  
+  <!-- Specialty Icon -->
+  <text x="320" y="90" text-anchor="middle" fill="rgba(251,191,36,0.9)" font-family="Arial, sans-serif" font-size="30">🛡️</text>
+  
+  <!-- Name -->
+  <text x="200" y="315" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Diego A. Bermudez</text>
+  <text x="200" y="345" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="14">CI/CD & Security Expert</text>
+  <text x="200" y="365" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="12">Healthnexus</text>
+</svg> 

@@ -1,0 +1,33 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <div class="site-header-inner">
+      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/rocket-bee-logo.svg' | relative_url }}" alt="HiveLab Logo" class="site-logo">
+        QA Hive<span class="lab-accent">Lab</span>
+      </a>
+
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger" class="menu-icon">
+          <span></span>
+        </label>
+
+        <div class="trigger">
+          {%- for item in site.navigation -%}
+            {%- assign current = false -%}
+            {%- if item.url == page.url or (item.url == '/' and page.url == '/') or (item.url == '/home/' and page.url == '/home/') -%}
+              {%- assign current = true -%}
+            {%- elsif item.url == '/' and page.layout == 'default' and page.title == 'Blog' -%}
+              {%- assign current = true -%}
+            {%- elsif item.url contains page.url and page.url != '/' -%}
+              {%- assign current = true -%}
+            {%- endif -%}
+            <a class="page-link{% if current %} current{% endif %}" href="{{ item.url | relative_url }}">
+              {{ item.title }}
+            </a>
+          {%- endfor -%}
+        </div>
+      </nav>
+    </div>
+  </div>
+</header> 

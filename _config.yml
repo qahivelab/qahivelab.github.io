@@ -1,0 +1,79 @@
+# Site settings
+title: "QA HiveLab"
+description: "A passionate QA Automation community exploring the intersection of automation and artificial intelligence"
+baseurl: ""
+url: "https://qahivelab.github.io"
+author: "QA HiveLab Community"
+email: "contact@qahivelab.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Collections
+collections:
+  team:
+    output: true
+    permalink: /:collection/:name/
+  resources:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/home/"
+  - title: "Blog"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Team"
+    url: "/team/"
+  - title: "Resources"
+    url: "/resources/"
+  - title: "Join Us"
+    url: "/join/"
+
+# Social links
+social:
+  github: "qahivelab"
+  linkedin: "company/qahivelab"
+  twitter: "qahivelab"
+  slack: "https://join.slack.com/t/qahivelab/shared_invite/..."
+  discord: "https://discord.gg/qahivelab"
+  telegram: "https://t.me/qahivelab"
+
+# SEO settings
+google_analytics: "G-XXXXXXXXXX"
+twitter:
+  username: qahivelab
+  card: summary_large_image
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE 

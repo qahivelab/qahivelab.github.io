@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/rocket-bee-favicon.svg"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Introducing Data-Driven Content Management for QA HiveLab | QA HiveLab</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Introducing Data-Driven Content Management for QA HiveLab" />
+<meta name="author" content="Diego Alejandro Bermudez" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Discover how QA HiveLab’s new content management system separates content from presentation, making it easy for anyone to contribute blog posts and manage site content through simple Markdown files and data structures." />
+<meta property="og:description" content="Discover how QA HiveLab’s new content management system separates content from presentation, making it easy for anyone to contribute blog posts and manage site content through simple Markdown files and data structures." />
+<link rel="canonical" href="http://0.0.0.0:4000/community/tools/2025/06/08/data-driven-content-management.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/community/tools/2025/06/08/data-driven-content-management.html" />
+<meta property="og:site_name" content="QA HiveLab" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-08T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Introducing Data-Driven Content Management for QA HiveLab" />
+<meta name="twitter:site" content="@qahivelab" />
+<meta name="twitter:creator" content="@Diego Alejandro Bermudez" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Diego Alejandro Bermudez"},"dateModified":"2025-06-08T00:00:00-05:00","datePublished":"2025-06-08T00:00:00-05:00","description":"Discover how QA HiveLab’s new content management system separates content from presentation, making it easy for anyone to contribute blog posts and manage site content through simple Markdown files and data structures.","headline":"Introducing Data-Driven Content Management for QA HiveLab","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/community/tools/2025/06/08/data-driven-content-management.html"},"url":"http://0.0.0.0:4000/community/tools/2025/06/08/data-driven-content-management.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="QA HiveLab" /></head> <body><header class="site-header" role="banner">
+  <div class="wrapper">
+    <div class="site-header-inner">
+      <a class="site-title" rel="author" href="/">
+        <img src="/assets/images/rocket-bee-logo.svg" alt="HiveLab Logo" class="site-logo">
+        QA Hive<span class="lab-accent">Lab</span>
+      </a>
+
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger" class="menu-icon">
+          <span></span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/home/">
+              Home
+            </a><a class="page-link" href="/">
+              Blog
+            </a><a class="page-link" href="/about/">
+              About
+            </a><a class="page-link" href="/team/">
+              Team
+            </a><a class="page-link" href="/resources/">
+              Resources
+            </a><a class="page-link" href="/join/">
+              Join Us
+            </a></div>
+      </nav>
+    </div>
+  </div>
+</header> <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Introducing Data-Driven Content Management for QA HiveLab</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-06-08T00:00:00-05:00" itemprop="datePublished">Jun 8, 2025
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Diego Alejandro Bermudez</span>
+          </span><br>
+      <span class="reading-time">3 min read</span>
+    </p><div class="post-tags"><span class="tag">jekyll</span><span class="tag">content-management</span><span class="tag">markdown</span><span class="tag">github</span></div></header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="introducing-data-driven-content-management-for-qa-hivelab">Introducing Data-Driven Content Management for QA HiveLab</h1>
+
+<p>At QA HiveLab, we believe that great content should come from great minds, not great web developers. That’s why we’ve completely restructured our content management system to separate content from presentation, making it incredibly easy for QA professionals to share their knowledge without needing to understand HTML or complex web technologies.</p>
+
+<h2 id="the-problem-with-traditional-approaches">The Problem with Traditional Approaches</h2>
+
+<p>Traditional blog platforms often mix content with presentation code, making it difficult for subject matter experts to contribute. Authors had to:</p>
+
+<ul>
+  <li>Learn HTML and CSS</li>
+  <li>Understand complex template structures</li>
+  <li>Navigate through code to make simple content changes</li>
+  <li>Risk breaking the site with formatting mistakes</li>
+</ul>
+
+<p>This created a barrier between our community’s knowledge and the blog that shares it.</p>
+
+<h2 id="our-data-driven-solution">Our Data-Driven Solution</h2>
+
+<p>We’ve implemented a <strong>data-driven content architecture</strong> that completely separates content from code:</p>
+
+<h3 id="️-structured-data-files">🗂️ <strong>Structured Data Files</strong></h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_data/site_config.yml</code> - All site settings and configuration</li>
+  <li><code class="language-plaintext highlighter-rouge">_data/authors.yml</code> - Author profiles and information</li>
+  <li>Clean separation of content and presentation logic</li>
+</ul>
+
+<h3 id="-content-templates">📝 <strong>Content Templates</strong></h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_templates/blog-post-template.md</code> - Ready-to-use blog post template</li>
+  <li>Structured front matter with clear instructions</li>
+  <li>Markdown-based content creation</li>
+</ul>
+
+<h3 id="-simple-contribution-workflow">🔄 <strong>Simple Contribution Workflow</strong></h3>
+<ol>
+  <li>Copy the blog post template</li>
+  <li>Fill in the structured front matter</li>
+  <li>Write content in Markdown</li>
+  <li>Submit via Pull Request</li>
+  <li>Automatic deployment via GitHub Actions</li>
+</ol>
+
+<h2 id="key-benefits">Key Benefits</h2>
+
+<h3 id="for-authors"><strong>For Authors</strong></h3>
+<ul>
+  <li><strong>No HTML knowledge required</strong> - Everything is in Markdown</li>
+  <li><strong>Structured templates</strong> - Copy, fill, and publish</li>
+  <li><strong>Author profiles</strong> - Managed separately from posts</li>
+  <li><strong>SEO optimization</strong> - Built into the template structure</li>
+</ul>
+
+<h3 id="for-administrators"><strong>For Administrators</strong></h3>
+<ul>
+  <li><strong>Easy site management</strong> - Change settings via data files</li>
+  <li><strong>Content moderation</strong> - Review via Pull Requests</li>
+  <li><strong>Automated deployment</strong> - GitHub Actions handle everything</li>
+  <li><strong>Scalable architecture</strong> - Add authors and content effortlessly</li>
+</ul>
+
+<h3 id="for-readers"><strong>For Readers</strong></h3>
+<ul>
+  <li><strong>Consistent experience</strong> - Professional presentation</li>
+  <li><strong>Rich author information</strong> - Detailed bios and social links</li>
+  <li><strong>Better discovery</strong> - Proper categorization and tagging</li>
+</ul>
+
+<h2 id="how-to-contribute-content">How to Contribute Content</h2>
+
+<p>Contributing to QA HiveLab is now as simple as:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Your</span><span class="nv"> </span><span class="s">Amazing</span><span class="nv"> </span><span class="s">QA</span><span class="nv"> </span><span class="s">Insight"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2025-06-08</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">your_author_id</span>
+<span class="na">excerpt</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">compelling</span><span class="nv"> </span><span class="s">one-sentence</span><span class="nv"> </span><span class="s">hook"</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">testing</span><span class="pi">,</span> <span class="nv">automation</span><span class="pi">]</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">selenium</span><span class="pi">,</span> <span class="nv">python</span><span class="pi">,</span> <span class="nv">ci-cd</span><span class="pi">]</span>
+<span class="nn">---</span>
+
+<span class="gh"># Your content here in Markdown</span>
+
+Write your amazing insights using simple Markdown syntax...
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="technical-implementation">Technical Implementation</h2>
+
+<p>Our solution leverages several key technologies:</p>
+
+<ul>
+  <li><strong>Jekyll Data Files</strong> - Store structured content separately</li>
+  <li><strong>Liquid Templates</strong> - Dynamic content rendering</li>
+  <li><strong>GitHub Actions</strong> - Automated deployment pipeline</li>
+  <li><strong>Markdown Processing</strong> - Clean content authoring</li>
+</ul>
+
+<h2 id="whats-next">What’s Next?</h2>
+
+<p>This foundation enables us to:</p>
+
+<ul>
+  <li>Add more content types (tutorials, case studies, resources)</li>
+  <li>Implement contributor workflows</li>
+  <li>Build community features</li>
+  <li>Scale content management effortlessly</li>
+</ul>
+
+<h2 id="get-started-today">Get Started Today</h2>
+
+<p>Ready to contribute to QA HiveLab? Check out our <a href="CONTENT_GUIDE.md">Content Contribution Guide</a> and start sharing your QA expertise with our community!</p>
+
+<hr />
+
+<p><em>Have questions about our content management system? Reach out to the QA HiveLab team or open an issue in our repository.</em></p>
+
+  </div><div class="author-bio">
+      <div class="author-info"><img src="/assets/images/team/diego-bermudez.svg" alt="Diego Alejandro Bermudez" class="author-avatar"><div class="author-details">
+          <h4>About Diego Alejandro Bermudez</h4>
+          <p class="author-role">CI/CD & AI Expertat Healthnexus</p>
+          <p>Mentoring and CI/CD security expert with deep AI knowledge. Focuses on building secure, automated testing pipelines and mentoring the next generation of QA professionals.</p><div class="author-social"><a href="https://github.com/diegobermudez" target="_blank">GitHub</a><a href="https://linkedin.com/in/diego-bermudez-qa" target="_blank">LinkedIn</a></div></div>
+      </div>
+    </div><footer class="post-footer">
+    <div class="post-navigation"><div class="nav-previous">
+          <span>← Previous Post</span>
+          <a href="/automation/api/2025/06/07/api-testing-best-practices-playwright.html">API Testing Best Practices with Playwright</a>
+        </div><div class="nav-next">
+          <span>Next Post →</span>
+          <a href="/community/team/2025/06/08/welcome-qa-hivelab-founders.html">Meet the QA HiveLab Founders: Expert QA Automation Professionals</a>
+        </div></div>
+    
+    <div class="post-share">
+      <p>Share this post:</p>
+      <div class="share-buttons">
+        <a href="https://twitter.com/intent/tweet?text=Introducing+Data-Driven+Content+Management+for+QA+HiveLab&url=http://0.0.0.0:4000/community/tools/2025/06/08/data-driven-content-management.html" 
+           target="_blank" class="share-btn twitter">Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://0.0.0.0:4000/community/tools/2025/06/08/data-driven-content-management.html" 
+           target="_blank" class="share-btn linkedin">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="u-url" href="/community/tools/2025/06/08/data-driven-content-management.html" hidden></a>
+</article> 
+    </div>
+  </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-heading">QA HiveLab</h3>
+        <p class="footer-description">A passionate QA Automation community exploring the intersection of automation and artificial intelligence</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links"><li>
+              <a href="/home/">Home</a>
+            </li><li>
+              <a href="/">Blog</a>
+            </li><li>
+              <a href="/about/">About</a>
+            </li><li>
+              <a href="/team/">Team</a>
+            </li><li>
+              <a href="/resources/">Resources</a>
+            </li><li>
+              <a href="/join/">Join Us</a>
+            </li></ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Connect With Us</h4>
+        <div class="social-links"><a href="https://github.com/qahivelab" target="_blank" rel="noopener">
+              <span class="icon icon--github"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> </span>
+              <span class="username">GitHub</span>
+            </a><a href="https://twitter.com/qahivelab" target="_blank" rel="noopener">
+              <span class="icon icon--twitter"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg> </span>
+              <span class="username">Twitter</span>
+            </a><a href="https://linkedin.com/company/qahivelab" target="_blank" rel="noopener">
+              <span class="username">LinkedIn</span>
+            </a></div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Powered By</h4>
+        <div class="powered-by">
+          <a href="https://sourcemeridian.com/" target="_blank" rel="noopener" class="source-meridian-link">
+            <span class="sm-logo">⚡</span>
+            <span class="sm-text">Source Meridian</span>
+          </a>
+          <p class="sm-description">Specialists in Life Science, Big Data & ML Solutions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 QA HiveLab. Built with Jekyll.</p>
+      <p class="footer-credits">
+        Powered by <a href="https://sourcemeridian.com/" target="_blank" rel="noopener" class="footer-sm-link">Source Meridian</a> 
+        - Your SaaS Development Partner
+      </p>
+    </div>
+  </div>
+</footer> <script src="/assets/js/main.js"></script>
+</body>
+
+</html> 

@@ -17,7 +17,7 @@ plugins:
 
 # Pagination
 paginate: 5
-paginate_path: "/page:num/"
+paginate_path: "/blog/page:num/"
 
 # Kramdown settings
 kramdown:
@@ -39,9 +39,9 @@ collections:
 # Navigation
 navigation:
   - title: "Home"
-    url: "/home/"
-  - title: "Blog"
     url: "/"
+  - title: "Blog"
+    url: "/blog/"
   - title: "About"
     url: "/about/"
   - title: "Team"

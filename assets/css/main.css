@@ -108,28 +108,45 @@ a:hover {
   top: 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  padding: 0.5rem 0;
 }
 
 .site-header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.5rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .site-title {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--primary-color);
   text-decoration: none;
-  transition: color 0.3s ease;
-  white-space: nowrap;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
 }
 
 .site-title:hover {
   color: var(--secondary-color);
+  transform: scale(1.02);
+}
+
+.site-logo {
+  height: 60px;  /* Increased height */
+  width: auto;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(47, 79, 79, 0.1));
+}
+
+.site-title:hover .site-logo {
+  filter: drop-shadow(0 4px 8px rgba(47, 79, 79, 0.2));
+  transform: scale(1.05);
 }
 
 .lab-accent {
@@ -138,79 +155,63 @@ a:hover {
   text-shadow: 0 2px 4px rgba(47, 79, 79, 0.3);
 }
 
-.site-logo {
-  height: 40px;  /* Fixed height */
-  width: auto;   /* Maintain aspect ratio */
-  margin-right: 0.5rem;
-  animation: pulse 2s infinite;
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .site-header-inner {
+    padding: 0.5rem 1rem;
+  }
+  
+  .site-logo {
+    height: 50px;  /* Slightly smaller on tablets */
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+  }
 }
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+@media (max-width: 768px) {
+  .site-logo {
+    height: 40px;  /* Even smaller on mobile */
+  }
+  
+  .site-title {
+    font-size: 1.25rem;
+  }
+  
+  .site-header-inner {
+    padding: 0.5rem;
+  }
 }
 
-/* Navigation */
-.site-nav {
-  position: relative;
-}
-
-.nav-trigger {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  position: relative;
-}
-
-.menu-icon span,
-.menu-icon span:before,
-.menu-icon span:after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: var(--primary-color);
-  transition: all 0.3s ease;
-  position: absolute;
-}
-
-.menu-icon span:before { top: -8px; }
-.menu-icon span:after { top: 8px; }
-
+/* Navigation adjustments to balance the larger logo */
 .trigger {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin-left: 2rem;
 }
 
 .page-link {
   color: var(--text-primary);
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
   transition: all 0.3s ease;
-  position: relative;
+  font-size: 1.1rem;
 }
 
 .page-link:hover {
   background: var(--light-bg);
   color: var(--primary-color);
+  transform: translateY(-1px);
 }
 
 .page-link.current {
   background: var(--primary-color);
   color: white;
-}
-
-.page-link.current:hover {
-  color: white;
-  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(47, 79, 79, 0.1);
 }
 
 /* Hero Section */

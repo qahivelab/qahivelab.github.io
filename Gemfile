@@ -12,6 +12,9 @@ source "https://rubygems.org"
 # Use the github-pages gem, which includes Jekyll and plugins approved for GitHub Pages
 gem "github-pages", group: :jekyll_plugins
 
+# Testing dependencies
+gem "html-proofer", "~> 3.19.0"
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do

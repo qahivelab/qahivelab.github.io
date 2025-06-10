@@ -61,7 +61,6 @@ social:
   telegram: "https://t.me/qahivelab"
 
 # SEO settings
-google_analytics: "G-XXXXXXXXXX"
 twitter:
   username: qahivelab
   card: summary_large_image

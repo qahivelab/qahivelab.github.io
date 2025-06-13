@@ -348,12 +348,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **QA Community** - For inspiration and content ideas
 - **Contributors** - Everyone who helps make this project better
 
-## 📞 Contact
-
-- **Website**: [https://qahivelab.github.io](https://qahivelab.github.io)
-- **Email**: contact@qahivelab.com
+## 📞 Site
 - **GitHub**: [@qahivelab](https://github.com/qahivelab)
-- **Twitter**: [@qahivelab](https://twitter.com/qahivelab)
 
 ---
 
